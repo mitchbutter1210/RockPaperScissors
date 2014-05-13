@@ -60,7 +60,7 @@ public class Main {
         System.out.println("Would you like to play again?");
         again = s.nextLine();
         again = again.toLowerCase();
-        if(again.equals("yes")){
+        if(again.equals("yes") || again.equals("y")){
             main(null);
         }
 
