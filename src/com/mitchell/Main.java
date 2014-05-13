@@ -11,6 +11,7 @@ public class Main {
         String guess;
         System.out.println("Rock, paper, or scissors?");
         guess = s.nextLine();
+        guess = guess.toLowerCase();
         if(compNum < 0.34){
             compGuess = "rock";
         }
@@ -28,28 +29,28 @@ public class Main {
 
         else if(guess.equals("rock")){
             if(compGuess.equals("scissors")){
-                System.out.println("Rock wins");
+                System.out.println("You win!");
             }
             else{
-                System.out.println("Paper wins");
+                System.out.println("Computer wins!");
             }
         }
 
         else if(guess.equals("paper")){
             if(compGuess.equals("rock")){
-                System.out.println("Paper wins");
+                System.out.println("You win!");
             }
             else{
-                System.out.println("Scissors wins");
+                System.out.println("Computer wins!");
             }
         }
 
         else if(guess.equals("scissors")){
             if(compGuess.equals("rock")){
-                System.out.println("Rock wins");
+                System.out.println("You win!");
             }
             else{
-                System.out.println("Scissors wins");
+                System.out.println("Computer wins!");
             }
         }
 
@@ -58,6 +59,7 @@ public class Main {
         String again;
         System.out.println("Would you like to play again?");
         again = s.nextLine();
+        again = again.toLowerCase();
         if(again.equals("yes")){
             main(null);
         }
